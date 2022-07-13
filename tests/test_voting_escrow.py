@@ -12,3 +12,4 @@ def test_deploy():
     hello_world.increment({'from': account})
 
     assert hello_world.counter() == counter + 1
+    assert hello_world.get_counter() == counter + 1
