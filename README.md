@@ -33,3 +33,8 @@ Deploy:
 ```bash
 brownie run scripts/deploy.py
 ```
+
+Test:
+```bash
+brownie test
+```
