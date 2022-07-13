@@ -10,3 +10,8 @@ def __init__(_counter: uint256):
 def increment() -> uint256:
     self.counter += 1
     return self.counter
+
+@external
+@view
+def get_counter() -> uint256:
+    return self.counter
