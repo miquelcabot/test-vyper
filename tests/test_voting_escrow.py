@@ -1,5 +1,6 @@
 from brownie import accounts, HelloWorld
 
+
 def test_deploy():
     account = accounts[0]
     counter = 20
@@ -7,3 +8,7 @@ def test_deploy():
     hello_world = HelloWorld.deploy(counter, {'from': account})
 
     assert hello_world.counter() == counter
+
+    hello_world.increment({'from': account})
+
+    assert hello_world.counter() == counter + 1
