@@ -1,14 +1,11 @@
-from brownie import accounts, config, network, VotingEscrow
-from pyrsistent import v
+from brownie import accounts, config, network, HelloWorld
 
 def read_contract():
     # -1 --> read the latest deployment
-    voting_escrow = VotingEscrow[-1]
-    print("VotingEscrow deployed on %s" % network.show_active())
-    print("Address %s" % voting_escrow)
-    print("Name: %s" % voting_escrow.name())
-    print("Symbol: %s" % voting_escrow.symbol())
-    print("Version: %s" % voting_escrow.version())
+    hello_world = HelloWorld[-1]
+    print("HellowWorld deployed on %s" % network.show_active())
+    print("Address %s" % hello_world)
+    print("Counter: %s" % hello_world.counter())
 
 def main():
     read_contract()
