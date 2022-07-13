@@ -13,6 +13,10 @@ Install packages in that environment:
 ```bash
 pip install -r requirements.txt
 ```
+or
+```bash
+pip install eth-brownie
+```
 
 Deactivate environment
 ```bash
