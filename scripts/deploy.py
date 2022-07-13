@@ -1,4 +1,4 @@
-from brownie import accounts, network, config, ERC20CRV, VotingEscrow
+from brownie import accounts, network, config, HelloWorld
 
 def get_account():
     if (network.show_active() == "development"):
@@ -10,14 +10,9 @@ def deploy_voting_escrow():
     account = get_account()
     print('Deploying from account %s' % account)
 
-    erc20 = ERC20CRV.deploy('Ocean token', 'OCEAN', 18, {'from': account})
+    hello_world = HelloWorld.deploy(10, {'from': account})
 
-    voting_escrow = VotingEscrow.deploy(
-        erc20, 'Ocean', 'OCEAN', '1.2', {'from': account})
-
-    print(voting_escrow.name())
-    print(voting_escrow.symbol())
-    print(voting_escrow.version())
+    print(hello_world.counter())
 
 def main():
     deploy_voting_escrow()
