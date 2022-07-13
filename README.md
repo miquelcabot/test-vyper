@@ -29,12 +29,22 @@ Compile:
 brownie compile
 ```
 
-Deploy:
+Deploy (development):
 ```bash
 brownie run scripts/deploy.py
+```
+
+Deploy (Rinkeby):
+```bash
+brownie run scripts/deploy.py --network rinkeby
 ```
 
 Test:
 ```bash
 brownie test
+```
+
+List networks:
+```bash
+brownie networks list
 ```
