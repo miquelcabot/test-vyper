@@ -1,5 +1,5 @@
-# test-brownie
-Test brownie framework
+# test-vyper
+Test Vyper smart contract language
 
 ## venv
 
