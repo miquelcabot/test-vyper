@@ -39,6 +39,11 @@ Deploy (Rinkeby):
 brownie run scripts/deploy.py --network rinkeby
 ```
 
+Read values of the deployed smart contract (Rinkeby):
+```bash
+brownie run scripts/read_values.py --network rinkeby
+```
+
 Test:
 ```bash
 brownie test
