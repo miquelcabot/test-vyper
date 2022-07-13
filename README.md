@@ -23,8 +23,13 @@ Deactivate environment
 deactivate
 ```
 
-## Compile, test....
+## Compile, deploy, test....
 Compile:
 ```bash
 brownie compile
+```
+
+Deploy:
+```bash
+brownie run scripts/deploy.py
 ```
