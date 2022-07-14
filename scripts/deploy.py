@@ -6,7 +6,7 @@ def get_account():
     else:
         return accounts.from_mnemonic(config["wallets"]["from_mnemonic"])
 
-def deploy_voting_escrow():
+def deploy_hello_world():
     account = get_account()
     print('Deploying from account %s' % account)
 
@@ -15,4 +15,4 @@ def deploy_voting_escrow():
     print(hello_world.counter())
 
 def main():
-    deploy_voting_escrow()
+    deploy_hello_world()
